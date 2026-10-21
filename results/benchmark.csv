@@ -1,0 +1,626 @@
+model_pair,k,length,prompt_id,mode,tokens_per_sec,speedup,acceptance_rate,exact_match,divergence_index,actual_length,elapsed_time_sec
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,64,p01_cs_speculative,Target-Only,18.07,1.0,1.0,True,,64,3.5419
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p01_cs_speculative,Cached Speculative (Fast),11.11,0.615,1.0,True,,64,5.7584
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p01_cs_speculative,Cached Speculative (Sequential),10.5,0.581,1.0,True,,64,6.0956
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p01_cs_speculative,Naive Speculative,4.06,0.225,1.0,True,,64,15.753
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p01_cs_speculative,Cached Speculative (Fast),10.99,0.608,1.0,True,,64,5.8237
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p01_cs_speculative,Cached Speculative (Sequential),10.6,0.587,1.0,True,,64,6.0386
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p01_cs_speculative,Naive Speculative,6.55,0.362,1.0,True,,64,9.7751
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p01_cs_speculative,Cached Speculative (Fast),9.99,0.553,1.0,True,,64,6.4087
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p01_cs_speculative,Cached Speculative (Sequential),11.32,0.627,1.0,True,,64,5.6529
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p01_cs_speculative,Cached Speculative (Fast),11.67,0.646,1.0,True,,64,5.4864
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p01_cs_speculative,Cached Speculative (Sequential),11.71,0.648,1.0,True,,64,5.4666
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p01_cs_speculative,Naive Speculative,10.89,0.603,0.9032,False,4,64,5.8762
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,128,p01_cs_speculative,Target-Only,24.41,1.0,1.0,True,,128,5.2443
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p01_cs_speculative,Cached Speculative (Fast),11.39,0.467,1.0,True,,128,11.2363
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p01_cs_speculative,Cached Speculative (Sequential),11.83,0.485,1.0,True,,128,10.8236
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p01_cs_speculative,Naive Speculative,4.39,0.18,1.0,True,,128,29.1472
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p01_cs_speculative,Cached Speculative (Fast),12.0,0.492,1.0,True,,128,10.6642
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p01_cs_speculative,Cached Speculative (Sequential),12.11,0.496,1.0,True,,128,10.5689
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p01_cs_speculative,Naive Speculative,6.48,0.265,0.9352,False,101,128,19.7528
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p01_cs_speculative,Cached Speculative (Fast),11.96,0.49,1.0,True,,128,10.7052
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p01_cs_speculative,Cached Speculative (Sequential),11.19,0.458,1.0,True,,128,11.4396
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p01_cs_speculative,Cached Speculative (Fast),11.45,0.469,1.0,True,,128,11.1746
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p01_cs_speculative,Cached Speculative (Sequential),8.94,0.366,1.0,True,,128,14.3133
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p01_cs_speculative,Naive Speculative,8.89,0.364,0.9496,False,4,128,14.4035
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,256,p01_cs_speculative,Target-Only,18.67,1.0,1.0,True,,256,13.7111
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p01_cs_speculative,Cached Speculative (Fast),10.63,0.569,1.0,True,,256,24.0762
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p01_cs_speculative,Cached Speculative (Sequential),12.61,0.676,1.0,True,,256,20.2967
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p01_cs_speculative,Cached Speculative (Fast),12.67,0.678,1.0,True,,256,20.2103
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p01_cs_speculative,Cached Speculative (Sequential),12.73,0.682,1.0,True,,256,20.1155
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p01_cs_speculative,Cached Speculative (Fast),12.97,0.695,1.0,True,,256,19.741
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p01_cs_speculative,Cached Speculative (Sequential),13.28,0.711,1.0,True,,256,19.2756
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p01_cs_speculative,Cached Speculative (Fast),13.51,0.724,1.0,True,,256,18.9471
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p01_cs_speculative,Cached Speculative (Sequential),13.13,0.703,1.0,True,,256,19.4928
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,512,p01_cs_speculative,Target-Only,27.69,1.0,1.0,True,,512,18.4901
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,512,p01_cs_speculative,Cached Speculative (Fast),13.62,0.492,1.0,True,,512,37.5816
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,512,p01_cs_speculative,Cached Speculative (Sequential),12.74,0.46,1.0,True,,512,40.1981
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,512,p01_cs_speculative,Cached Speculative (Fast),9.4,0.339,1.0,True,,512,54.4708
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,512,p01_cs_speculative,Cached Speculative (Sequential),9.28,0.335,1.0,True,,512,55.1483
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,64,p02_dl_transformers,Target-Only,18.24,1.0,1.0,True,,64,3.508
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p02_dl_transformers,Cached Speculative (Fast),9.02,0.494,1.0,True,,64,7.0971
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p02_dl_transformers,Cached Speculative (Sequential),9.88,0.541,1.0,True,,64,6.4784
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p02_dl_transformers,Naive Speculative,3.9,0.214,1.0,True,,64,16.4126
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p02_dl_transformers,Cached Speculative (Fast),8.87,0.486,1.0,True,,64,7.2117
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p02_dl_transformers,Cached Speculative (Sequential),8.68,0.476,1.0,True,,64,7.3694
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p02_dl_transformers,Naive Speculative,6.57,0.36,1.0,True,,64,9.7452
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p02_dl_transformers,Cached Speculative (Fast),8.85,0.485,1.0,True,,64,7.2319
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p02_dl_transformers,Cached Speculative (Sequential),9.1,0.499,1.0,True,,64,7.0352
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p02_dl_transformers,Cached Speculative (Fast),8.88,0.487,1.0,True,,64,7.2071
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p02_dl_transformers,Cached Speculative (Sequential),8.71,0.477,1.0,True,,64,7.3507
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p02_dl_transformers,Naive Speculative,10.73,0.588,1.0,True,,64,5.9641
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,128,p02_dl_transformers,Target-Only,7.82,1.0,1.0,True,,128,16.3753
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p02_dl_transformers,Cached Speculative (Fast),3.88,0.497,1.0,True,,128,32.958
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p02_dl_transformers,Cached Speculative (Sequential),4.21,0.539,1.0,True,,128,30.3791
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p02_dl_transformers,Naive Speculative,1.79,0.229,1.0,True,,128,71.5738
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p02_dl_transformers,Cached Speculative (Fast),3.9,0.5,1.0,True,,128,32.7789
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p02_dl_transformers,Cached Speculative (Sequential),3.83,0.49,1.0,True,,128,33.4335
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p02_dl_transformers,Naive Speculative,2.73,0.349,1.0,True,,128,46.8591
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p02_dl_transformers,Cached Speculative (Fast),7.24,0.926,1.0,True,,128,17.6809
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p02_dl_transformers,Cached Speculative (Sequential),8.62,1.103,1.0,True,,128,14.8504
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p02_dl_transformers,Cached Speculative (Fast),8.85,1.132,1.0,True,,128,14.4704
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p02_dl_transformers,Cached Speculative (Sequential),8.86,1.134,1.0,True,,128,14.4443
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p02_dl_transformers,Naive Speculative,7.65,0.979,1.0,True,,128,16.7272
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,256,p02_dl_transformers,Target-Only,17.99,1.0,1.0,True,,256,14.2273
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p02_dl_transformers,Cached Speculative (Fast),5.44,0.302,1.0,True,,256,47.0481
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p02_dl_transformers,Cached Speculative (Sequential),3.76,0.209,1.0,True,,256,68.0766
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p02_dl_transformers,Cached Speculative (Fast),3.74,0.208,1.0,True,,256,68.437
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p02_dl_transformers,Cached Speculative (Sequential),3.86,0.215,1.0,True,,256,66.2791
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p02_dl_transformers,Cached Speculative (Fast),3.88,0.215,1.0,True,,256,66.045
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p02_dl_transformers,Cached Speculative (Sequential),3.83,0.213,1.0,True,,256,66.8078
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p02_dl_transformers,Cached Speculative (Fast),3.76,0.209,1.0,True,,256,68.0096
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p02_dl_transformers,Cached Speculative (Sequential),2.05,0.114,1.0,True,,256,125.0834
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,512,p02_dl_transformers,Target-Only,9.57,1.0,1.0,True,,512,53.4742
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,512,p02_dl_transformers,Cached Speculative (Fast),7.5,0.783,1.0,True,,512,68.2993
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,512,p02_dl_transformers,Cached Speculative (Sequential),6.65,0.695,1.0,True,,512,76.9795
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,512,p02_dl_transformers,Cached Speculative (Fast),6.65,0.695,1.0,True,,512,76.9869
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,512,p02_dl_transformers,Cached Speculative (Sequential),6.52,0.681,1.0,True,,512,78.5017
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,64,p03_thermodynamics,Target-Only,13.08,1.0,1.0,True,,64,4.8917
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p03_thermodynamics,Cached Speculative (Fast),8.1,0.619,1.0,True,,64,7.9056
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p03_thermodynamics,Cached Speculative (Sequential),6.44,0.492,1.0,True,,64,9.9346
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p03_thermodynamics,Naive Speculative,4.12,0.315,1.0,True,,64,15.5309
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p03_thermodynamics,Cached Speculative (Fast),6.17,0.471,1.0,True,,64,10.3752
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p03_thermodynamics,Cached Speculative (Sequential),6.46,0.493,1.0,True,,64,9.9145
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p03_thermodynamics,Naive Speculative,5.58,0.426,1.0,True,,64,11.4697
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p03_thermodynamics,Cached Speculative (Fast),6.48,0.495,1.0,True,,64,9.8794
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p03_thermodynamics,Cached Speculative (Sequential),6.28,0.48,1.0,True,,64,10.1938
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p03_thermodynamics,Cached Speculative (Fast),6.35,0.485,1.0,True,,64,10.0763
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p03_thermodynamics,Cached Speculative (Sequential),6.11,0.467,1.0,True,,64,10.473
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p03_thermodynamics,Naive Speculative,7.69,0.588,1.0,True,,64,8.3179
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,128,p03_thermodynamics,Target-Only,13.29,1.0,1.0,True,,128,9.6282
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p03_thermodynamics,Cached Speculative (Fast),6.27,0.472,1.0,True,,128,20.415
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p03_thermodynamics,Cached Speculative (Sequential),6.82,0.513,1.0,True,,128,18.7719
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p03_thermodynamics,Naive Speculative,2.96,0.223,1.0,True,,128,43.2347
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p03_thermodynamics,Cached Speculative (Fast),6.3,0.474,1.0,True,,128,20.3109
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p03_thermodynamics,Cached Speculative (Sequential),6.1,0.459,1.0,True,,128,20.9902
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p03_thermodynamics,Naive Speculative,4.09,0.308,1.0,True,,128,31.2742
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p03_thermodynamics,Cached Speculative (Fast),6.48,0.487,1.0,True,,128,19.759
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p03_thermodynamics,Cached Speculative (Sequential),6.63,0.499,1.0,True,,128,19.3039
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p03_thermodynamics,Cached Speculative (Fast),6.64,0.5,1.0,True,,128,19.2745
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p03_thermodynamics,Cached Speculative (Sequential),6.44,0.484,1.0,True,,128,19.8775
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p03_thermodynamics,Naive Speculative,6.26,0.471,1.0,True,,128,20.4516
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,256,p03_thermodynamics,Target-Only,13.07,1.0,1.0,True,,256,19.5813
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p03_thermodynamics,Cached Speculative (Fast),6.77,0.518,1.0,True,,256,37.833
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p03_thermodynamics,Cached Speculative (Sequential),7.09,0.542,1.0,True,,256,36.1277
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p03_thermodynamics,Cached Speculative (Fast),7.08,0.542,1.0,True,,256,36.1347
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p03_thermodynamics,Cached Speculative (Sequential),7.04,0.539,1.0,True,,256,36.3546
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p03_thermodynamics,Cached Speculative (Fast),6.89,0.527,1.0,True,,256,37.1467
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p03_thermodynamics,Cached Speculative (Sequential),6.97,0.533,1.0,True,,256,36.7504
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p03_thermodynamics,Cached Speculative (Fast),7.53,0.576,1.0,True,,256,33.9777
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p03_thermodynamics,Cached Speculative (Sequential),8.1,0.62,1.0,True,,256,31.5914
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,512,p03_thermodynamics,Target-Only,16.89,1.0,1.0,True,,512,30.3062
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,512,p03_thermodynamics,Cached Speculative (Fast),8.27,0.49,1.0,True,,512,61.9123
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,512,p03_thermodynamics,Cached Speculative (Sequential),8.88,0.526,1.0,True,,512,57.654
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,512,p03_thermodynamics,Cached Speculative (Fast),11.78,0.697,1.0,True,,512,43.4743
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,512,p03_thermodynamics,Cached Speculative (Sequential),14.76,0.874,1.0,True,,512,34.6868
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,64,p04_dna_transcription,Target-Only,28.75,1.0,1.0,True,,64,2.2263
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p04_dna_transcription,Cached Speculative (Fast),16.84,0.586,1.0,True,,64,3.8008
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p04_dna_transcription,Cached Speculative (Sequential),15.77,0.548,1.0,True,,64,4.0594
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p04_dna_transcription,Naive Speculative,7.69,0.268,1.0,True,,64,8.3188
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p04_dna_transcription,Cached Speculative (Fast),14.5,0.504,1.0,True,,64,4.4148
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p04_dna_transcription,Cached Speculative (Sequential),16.2,0.564,1.0,True,,64,3.9502
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p04_dna_transcription,Naive Speculative,12.29,0.427,1.0,True,,64,5.2094
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p04_dna_transcription,Cached Speculative (Fast),10.59,0.369,1.0,True,,64,6.0415
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p04_dna_transcription,Cached Speculative (Sequential),17.5,0.609,1.0,True,,64,3.657
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p04_dna_transcription,Cached Speculative (Fast),17.45,0.607,1.0,True,,64,3.6683
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p04_dna_transcription,Cached Speculative (Sequential),17.96,0.625,1.0,True,,64,3.5632
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p04_dna_transcription,Naive Speculative,18.92,0.658,1.0,True,,64,3.3829
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,128,p04_dna_transcription,Target-Only,33.37,1.0,1.0,True,,128,3.8354
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p04_dna_transcription,Cached Speculative (Fast),21.77,0.652,1.0,True,,128,5.8801
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p04_dna_transcription,Cached Speculative (Sequential),16.24,0.487,1.0,True,,128,7.881
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p04_dna_transcription,Naive Speculative,7.15,0.214,1.0,True,,128,17.8917
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p04_dna_transcription,Cached Speculative (Fast),10.15,0.304,1.0,True,,128,12.6156
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p04_dna_transcription,Cached Speculative (Sequential),12.23,0.367,1.0,True,,128,10.4647
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p04_dna_transcription,Naive Speculative,11.62,0.348,1.0,True,,128,11.0127
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p04_dna_transcription,Cached Speculative (Fast),14.52,0.435,1.0,True,,128,8.8134
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p04_dna_transcription,Cached Speculative (Sequential),16.23,0.486,1.0,True,,128,7.8867
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p04_dna_transcription,Cached Speculative (Fast),14.37,0.431,1.0,True,,128,8.9054
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p04_dna_transcription,Cached Speculative (Sequential),14.68,0.44,1.0,True,,128,8.7182
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p04_dna_transcription,Naive Speculative,15.17,0.455,1.0,True,,128,8.4364
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,256,p04_dna_transcription,Target-Only,29.29,1.0,1.0,True,,256,8.7412
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p04_dna_transcription,Cached Speculative (Fast),14.56,0.497,1.0,True,,256,17.5791
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p04_dna_transcription,Cached Speculative (Sequential),15.73,0.537,1.0,True,,256,16.2791
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p04_dna_transcription,Cached Speculative (Fast),14.06,0.48,1.0,True,,256,18.2074
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p04_dna_transcription,Cached Speculative (Sequential),17.26,0.589,1.0,True,,256,14.8289
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p04_dna_transcription,Cached Speculative (Fast),15.57,0.532,1.0,True,,256,16.4426
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p04_dna_transcription,Cached Speculative (Sequential),16.3,0.557,1.0,True,,256,15.7016
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p04_dna_transcription,Cached Speculative (Fast),15.67,0.535,1.0,True,,256,16.3419
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p04_dna_transcription,Cached Speculative (Sequential),17.22,0.588,1.0,True,,256,14.8628
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,512,p04_dna_transcription,Target-Only,33.91,1.0,1.0,True,,512,15.101
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,512,p04_dna_transcription,Cached Speculative (Fast),15.92,0.47,1.0,True,,512,32.1528
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,512,p04_dna_transcription,Cached Speculative (Sequential),15.05,0.444,1.0,True,,512,34.0214
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,512,p04_dna_transcription,Cached Speculative (Fast),15.34,0.452,1.0,True,,512,33.3872
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,512,p04_dna_transcription,Cached Speculative (Sequential),15.04,0.444,1.0,True,,512,34.0433
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,64,p05_maritime_law,Target-Only,26.96,1.0,1.0,True,,64,2.3739
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p05_maritime_law,Cached Speculative (Fast),14.05,0.521,1.0,True,,64,4.556
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p05_maritime_law,Cached Speculative (Sequential),15.9,0.59,1.0,True,,64,4.0246
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p05_maritime_law,Naive Speculative,8.7,0.323,1.0,True,,64,7.3576
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p05_maritime_law,Cached Speculative (Fast),14.48,0.537,1.0,True,,64,4.4188
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p05_maritime_law,Cached Speculative (Sequential),13.88,0.515,1.0,True,,64,4.6113
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p05_maritime_law,Naive Speculative,10.92,0.405,1.0,True,,64,5.8624
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p05_maritime_law,Cached Speculative (Fast),15.68,0.582,1.0,True,,64,4.0821
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p05_maritime_law,Cached Speculative (Sequential),16.37,0.607,1.0,True,,64,3.9098
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p05_maritime_law,Cached Speculative (Fast),15.43,0.572,1.0,True,,64,4.1469
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p05_maritime_law,Cached Speculative (Sequential),17.07,0.633,1.0,True,,64,3.749
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p05_maritime_law,Naive Speculative,18.6,0.69,1.0,True,,64,3.441
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,128,p05_maritime_law,Target-Only,34.55,1.0,1.0,True,,128,3.7047
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p05_maritime_law,Cached Speculative (Fast),15.71,0.455,1.0,True,,128,8.1469
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p05_maritime_law,Cached Speculative (Sequential),16.56,0.479,1.0,True,,128,7.728
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p05_maritime_law,Naive Speculative,7.65,0.221,1.0,True,,128,16.7413
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p05_maritime_law,Cached Speculative (Fast),15.36,0.445,1.0,True,,128,8.334
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p05_maritime_law,Cached Speculative (Sequential),15.82,0.458,1.0,True,,128,8.091
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p05_maritime_law,Naive Speculative,10.26,0.297,1.0,True,,128,12.4706
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p05_maritime_law,Cached Speculative (Fast),15.68,0.454,1.0,True,,128,8.1626
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p05_maritime_law,Cached Speculative (Sequential),15.64,0.453,1.0,True,,128,8.1851
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p05_maritime_law,Cached Speculative (Fast),15.35,0.444,1.0,True,,128,8.3407
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p05_maritime_law,Cached Speculative (Sequential),15.33,0.444,1.0,True,,128,8.3492
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p05_maritime_law,Naive Speculative,15.31,0.443,1.0,True,,128,8.3613
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,256,p05_maritime_law,Target-Only,31.6,1.0,1.0,True,,256,8.1023
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p05_maritime_law,Cached Speculative (Fast),16.36,0.518,1.0,True,,256,15.6493
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p05_maritime_law,Cached Speculative (Sequential),16.46,0.521,1.0,True,,256,15.5534
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p05_maritime_law,Cached Speculative (Fast),15.51,0.491,1.0,True,,256,16.508
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p05_maritime_law,Cached Speculative (Sequential),13.3,0.421,1.0,True,,256,19.2457
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p05_maritime_law,Cached Speculative (Fast),13.08,0.414,1.0,True,,256,19.5699
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p05_maritime_law,Cached Speculative (Sequential),16.52,0.523,1.0,True,,256,15.4924
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p05_maritime_law,Cached Speculative (Fast),16.52,0.523,1.0,True,,256,15.4936
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p05_maritime_law,Cached Speculative (Sequential),16.43,0.52,1.0,True,,256,15.5849
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,512,p05_maritime_law,Target-Only,32.02,1.0,1.0,True,,512,15.9892
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,512,p05_maritime_law,Cached Speculative (Fast),15.34,0.479,1.0,True,,512,33.3724
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,512,p05_maritime_law,Cached Speculative (Sequential),15.41,0.481,1.0,True,,512,33.2256
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,512,p05_maritime_law,Cached Speculative (Fast),15.68,0.49,1.0,True,,512,32.6444
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,512,p05_maritime_law,Cached Speculative (Sequential),15.53,0.485,1.0,True,,512,32.9581
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,64,p06_monetary_policy,Target-Only,33.95,1.0,1.0,True,,64,1.8853
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p06_monetary_policy,Cached Speculative (Fast),17.55,0.517,1.0,True,,64,3.6463
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p06_monetary_policy,Cached Speculative (Sequential),17.93,0.528,1.0,True,,64,3.5686
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p06_monetary_policy,Cached Speculative (Fast),12.17,0.358,1.0,True,,64,5.2593
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p06_monetary_policy,Cached Speculative (Sequential),10.9,0.321,1.0,True,,64,5.8734
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p06_monetary_policy,Naive Speculative,10.1,0.298,1.0,True,,64,6.3337
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p06_monetary_policy,Cached Speculative (Fast),12.4,0.365,1.0,True,,64,5.1605
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p06_monetary_policy,Cached Speculative (Sequential),11.57,0.341,1.0,True,,64,5.5337
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p06_monetary_policy,Cached Speculative (Fast),12.5,0.368,1.0,True,,64,5.122
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p06_monetary_policy,Cached Speculative (Sequential),16.82,0.495,1.0,True,,64,3.8049
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,128,p06_monetary_policy,Target-Only,31.6,1.0,1.0,True,,128,4.0502
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p06_monetary_policy,Cached Speculative (Fast),16.26,0.515,1.0,True,,128,7.8699
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p06_monetary_policy,Cached Speculative (Sequential),15.75,0.498,1.0,True,,128,8.129
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p06_monetary_policy,Cached Speculative (Fast),15.8,0.5,1.0,True,,128,8.1031
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p06_monetary_policy,Cached Speculative (Sequential),15.62,0.494,1.0,True,,128,8.1968
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p06_monetary_policy,Naive Speculative,11.14,0.352,1.0,True,,128,11.4935
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p06_monetary_policy,Cached Speculative (Fast),13.55,0.429,1.0,True,,128,9.4446
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p06_monetary_policy,Cached Speculative (Sequential),14.02,0.444,1.0,True,,128,9.1317
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p06_monetary_policy,Cached Speculative (Fast),14.99,0.474,1.0,True,,128,8.5375
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p06_monetary_policy,Cached Speculative (Sequential),14.78,0.468,1.0,True,,128,8.6598
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,256,p06_monetary_policy,Target-Only,32.38,1.0,1.0,True,,256,7.9055
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p06_monetary_policy,Cached Speculative (Fast),16.43,0.507,1.0,True,,256,15.5831
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p06_monetary_policy,Cached Speculative (Sequential),14.32,0.442,1.0,True,,256,17.8751
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p06_monetary_policy,Cached Speculative (Fast),16.53,0.511,1.0,True,,256,15.4832
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p06_monetary_policy,Cached Speculative (Sequential),16.2,0.5,1.0,True,,256,15.8041
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p06_monetary_policy,Cached Speculative (Fast),16.26,0.502,1.0,True,,256,15.7395
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p06_monetary_policy,Cached Speculative (Sequential),14.17,0.438,1.0,True,,256,18.0616
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p06_monetary_policy,Cached Speculative (Fast),16.54,0.511,1.0,True,,256,15.4782
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p06_monetary_policy,Cached Speculative (Sequential),15.69,0.484,1.0,True,,256,16.3208
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,64,p07_creative_clockmaker,Target-Only,33.24,1.0,1.0,True,,64,1.9253
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p07_creative_clockmaker,Cached Speculative (Fast),15.55,0.468,1.0,True,,64,4.1161
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p07_creative_clockmaker,Cached Speculative (Sequential),17.16,0.516,1.0,True,,64,3.7286
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p07_creative_clockmaker,Cached Speculative (Fast),17.03,0.512,1.0,True,,64,3.7573
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p07_creative_clockmaker,Cached Speculative (Sequential),16.51,0.497,1.0,True,,64,3.8756
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p07_creative_clockmaker,Naive Speculative,13.76,0.414,1.0,True,,64,4.6506
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p07_creative_clockmaker,Cached Speculative (Fast),13.15,0.395,1.0,True,,64,4.8683
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p07_creative_clockmaker,Cached Speculative (Sequential),10.18,0.306,1.0,True,,64,6.2871
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p07_creative_clockmaker,Cached Speculative (Fast),11.72,0.353,1.0,True,,64,5.4611
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p07_creative_clockmaker,Cached Speculative (Sequential),12.05,0.362,1.0,True,,64,5.312
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,128,p07_creative_clockmaker,Target-Only,29.56,1.0,1.0,True,,128,4.3304
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p07_creative_clockmaker,Cached Speculative (Fast),14.13,0.478,1.0,True,,128,9.0572
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p07_creative_clockmaker,Cached Speculative (Sequential),15.87,0.537,1.0,True,,128,8.0665
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p07_creative_clockmaker,Cached Speculative (Fast),15.71,0.531,1.0,True,,128,8.1489
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p07_creative_clockmaker,Cached Speculative (Sequential),14.06,0.476,1.0,True,,128,9.1063
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p07_creative_clockmaker,Naive Speculative,10.61,0.359,1.0,True,,128,12.0652
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p07_creative_clockmaker,Cached Speculative (Fast),14.97,0.506,1.0,True,,128,8.5529
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p07_creative_clockmaker,Cached Speculative (Sequential),14.01,0.474,1.0,True,,128,9.1368
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p07_creative_clockmaker,Cached Speculative (Fast),16.34,0.553,1.0,True,,128,7.8357
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p07_creative_clockmaker,Cached Speculative (Sequential),14.85,0.502,1.0,True,,128,8.6215
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,256,p07_creative_clockmaker,Target-Only,30.9,1.0,1.0,True,,256,8.2842
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p07_creative_clockmaker,Cached Speculative (Fast),16.28,0.527,1.0,True,,256,15.7238
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p07_creative_clockmaker,Cached Speculative (Sequential),15.96,0.516,1.0,True,,256,16.0423
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p07_creative_clockmaker,Cached Speculative (Fast),15.6,0.505,1.0,True,,256,16.4145
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p07_creative_clockmaker,Cached Speculative (Sequential),15.74,0.509,1.0,True,,256,16.2661
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p07_creative_clockmaker,Cached Speculative (Fast),16.31,0.528,1.0,True,,256,15.6972
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p07_creative_clockmaker,Cached Speculative (Sequential),15.04,0.487,1.0,True,,256,17.025
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p07_creative_clockmaker,Cached Speculative (Fast),16.1,0.521,1.0,True,,256,15.903
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p07_creative_clockmaker,Cached Speculative (Sequential),15.63,0.506,1.0,True,,256,16.3769
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,64,p08_quantum_mechanics,Target-Only,34.27,1.0,1.0,True,,64,1.8674
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p08_quantum_mechanics,Cached Speculative (Fast),15.64,0.456,1.0,True,,64,4.0933
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p08_quantum_mechanics,Cached Speculative (Sequential),14.73,0.43,1.0,True,,64,4.3456
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p08_quantum_mechanics,Cached Speculative (Fast),15.37,0.449,1.0,True,,64,4.163
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p08_quantum_mechanics,Cached Speculative (Sequential),15.16,0.442,1.0,True,,64,4.2213
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p08_quantum_mechanics,Naive Speculative,13.65,0.398,1.0,True,,64,4.6881
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p08_quantum_mechanics,Cached Speculative (Fast),13.62,0.397,1.0,True,,64,4.7001
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p08_quantum_mechanics,Cached Speculative (Sequential),14.65,0.427,1.0,True,,64,4.3697
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p08_quantum_mechanics,Cached Speculative (Fast),13.58,0.396,1.0,True,,64,4.7117
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p08_quantum_mechanics,Cached Speculative (Sequential),14.09,0.411,1.0,True,,64,4.5407
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,128,p08_quantum_mechanics,Target-Only,31.43,1.0,1.0,True,,128,4.0727
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p08_quantum_mechanics,Cached Speculative (Fast),15.19,0.483,1.0,True,,128,8.4284
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p08_quantum_mechanics,Cached Speculative (Sequential),15.59,0.496,1.0,True,,128,8.2091
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p08_quantum_mechanics,Cached Speculative (Fast),14.73,0.469,1.0,True,,128,8.6922
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p08_quantum_mechanics,Cached Speculative (Sequential),15.08,0.48,1.0,True,,128,8.4874
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p08_quantum_mechanics,Naive Speculative,9.82,0.312,1.0,True,,128,13.0337
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p08_quantum_mechanics,Cached Speculative (Fast),16.1,0.512,1.0,True,,128,7.9522
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p08_quantum_mechanics,Cached Speculative (Sequential),16.38,0.521,1.0,True,,128,7.8146
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p08_quantum_mechanics,Cached Speculative (Fast),15.5,0.493,1.0,True,,128,8.2602
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p08_quantum_mechanics,Cached Speculative (Sequential),15.18,0.483,1.0,True,,128,8.4337
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,256,p08_quantum_mechanics,Target-Only,30.02,1.0,1.0,True,,256,8.5267
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p08_quantum_mechanics,Cached Speculative (Fast),15.73,0.524,1.0,True,,256,16.2781
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p08_quantum_mechanics,Cached Speculative (Sequential),15.22,0.507,1.0,True,,256,16.8146
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p08_quantum_mechanics,Cached Speculative (Fast),14.65,0.488,1.0,True,,256,17.4778
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p08_quantum_mechanics,Cached Speculative (Sequential),15.17,0.505,1.0,True,,256,16.8736
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p08_quantum_mechanics,Cached Speculative (Fast),16.64,0.554,1.0,True,,256,15.3863
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p08_quantum_mechanics,Cached Speculative (Sequential),15.54,0.518,1.0,True,,256,16.4699
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p08_quantum_mechanics,Cached Speculative (Fast),16.54,0.551,1.0,True,,256,15.4762
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p08_quantum_mechanics,Cached Speculative (Sequential),15.95,0.531,1.0,True,,256,16.046
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,64,p09_renaissance_history,Target-Only,30.18,1.0,1.0,True,,64,2.1209
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p09_renaissance_history,Cached Speculative (Fast),16.61,0.55,1.0,True,,64,3.853
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p09_renaissance_history,Cached Speculative (Sequential),15.99,0.53,1.0,True,,64,4.0032
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p09_renaissance_history,Cached Speculative (Fast),16.39,0.543,1.0,True,,64,3.9048
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p09_renaissance_history,Cached Speculative (Sequential),16.16,0.535,1.0,True,,64,3.9614
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p09_renaissance_history,Naive Speculative,14.41,0.478,1.0,True,,64,4.4413
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p09_renaissance_history,Cached Speculative (Fast),12.31,0.408,1.0,True,,64,5.1998
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p09_renaissance_history,Cached Speculative (Sequential),12.58,0.417,1.0,True,,64,5.0856
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p09_renaissance_history,Cached Speculative (Fast),11.79,0.391,1.0,True,,64,5.4281
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p09_renaissance_history,Cached Speculative (Sequential),12.18,0.404,1.0,True,,64,5.2543
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,128,p09_renaissance_history,Target-Only,23.65,1.0,1.0,True,,128,5.4123
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p09_renaissance_history,Cached Speculative (Fast),12.15,0.514,1.0,True,,128,10.5361
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p09_renaissance_history,Cached Speculative (Sequential),11.92,0.504,1.0,True,,128,10.7418
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p09_renaissance_history,Cached Speculative (Fast),12.2,0.516,1.0,True,,128,10.4959
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p09_renaissance_history,Cached Speculative (Sequential),10.99,0.465,1.0,True,,128,11.6442
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p09_renaissance_history,Naive Speculative,10.69,0.452,1.0,True,,128,11.9789
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p09_renaissance_history,Cached Speculative (Fast),15.07,0.637,1.0,True,,128,8.4918
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p09_renaissance_history,Cached Speculative (Sequential),14.67,0.62,1.0,True,,128,8.7263
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p09_renaissance_history,Cached Speculative (Fast),14.91,0.63,1.0,True,,128,8.5877
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p09_renaissance_history,Cached Speculative (Sequential),16.23,0.686,1.0,True,,128,7.8885
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,256,p09_renaissance_history,Target-Only,32.01,1.0,1.0,True,,256,7.997
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p09_renaissance_history,Cached Speculative (Fast),16.46,0.514,1.0,True,,256,15.5491
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p09_renaissance_history,Cached Speculative (Sequential),16.63,0.52,1.0,True,,256,15.3935
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p09_renaissance_history,Cached Speculative (Fast),15.8,0.494,1.0,True,,256,16.2012
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p09_renaissance_history,Cached Speculative (Sequential),16.59,0.518,1.0,True,,256,15.4326
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p09_renaissance_history,Cached Speculative (Fast),15.62,0.488,1.0,True,,256,16.3899
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p09_renaissance_history,Cached Speculative (Sequential),15.23,0.476,1.0,True,,256,16.8074
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p09_renaissance_history,Cached Speculative (Fast),14.34,0.448,1.0,True,,256,17.8541
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p09_renaissance_history,Cached Speculative (Sequential),15.81,0.494,1.0,True,,256,16.1884
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,64,p10_distributed_systems,Target-Only,29.03,1.0,1.0,True,,64,2.2046
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p10_distributed_systems,Cached Speculative (Fast),13.91,0.479,1.0,True,,64,4.6
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p10_distributed_systems,Cached Speculative (Sequential),16.41,0.565,1.0,True,,64,3.8993
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p10_distributed_systems,Cached Speculative (Fast),15.38,0.53,1.0,True,,64,4.1609
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p10_distributed_systems,Cached Speculative (Sequential),13.44,0.463,1.0,True,,64,4.7611
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p10_distributed_systems,Naive Speculative,11.54,0.398,1.0,True,,64,5.5449
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p10_distributed_systems,Cached Speculative (Fast),14.43,0.497,1.0,True,,64,4.4346
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p10_distributed_systems,Cached Speculative (Sequential),16.12,0.555,1.0,True,,64,3.9698
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p10_distributed_systems,Cached Speculative (Fast),12.86,0.443,1.0,True,,64,4.9765
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p10_distributed_systems,Cached Speculative (Sequential),15.05,0.518,1.0,True,,64,4.2535
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,128,p10_distributed_systems,Target-Only,31.55,1.0,1.0,True,,128,4.0574
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p10_distributed_systems,Cached Speculative (Fast),14.97,0.475,1.0,True,,128,8.5503
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p10_distributed_systems,Cached Speculative (Sequential),16.01,0.507,1.0,True,,128,7.9954
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p10_distributed_systems,Cached Speculative (Fast),12.8,0.406,1.0,True,,128,9.9992
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p10_distributed_systems,Cached Speculative (Sequential),12.64,0.401,1.0,True,,128,10.1259
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p10_distributed_systems,Naive Speculative,8.16,0.259,1.0,True,,128,15.6853
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p10_distributed_systems,Cached Speculative (Fast),11.46,0.363,1.0,True,,128,11.1692
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p10_distributed_systems,Cached Speculative (Sequential),15.42,0.489,1.0,True,,128,8.3014
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p10_distributed_systems,Cached Speculative (Fast),15.5,0.491,1.0,True,,128,8.258
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p10_distributed_systems,Cached Speculative (Sequential),15.27,0.484,1.0,True,,128,8.382
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,256,p10_distributed_systems,Target-Only,30.04,1.0,1.0,True,,256,8.5219
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p10_distributed_systems,Cached Speculative (Fast),15.46,0.515,1.0,True,,256,16.5607
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p10_distributed_systems,Cached Speculative (Sequential),15.83,0.527,1.0,True,,256,16.1694
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p10_distributed_systems,Cached Speculative (Fast),16.48,0.548,1.0,True,,256,15.537
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p10_distributed_systems,Cached Speculative (Sequential),15.32,0.51,1.0,True,,256,16.7143
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p10_distributed_systems,Cached Speculative (Fast),16.73,0.557,1.0,True,,256,15.2974
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p10_distributed_systems,Cached Speculative (Sequential),15.22,0.507,1.0,True,,256,16.8161
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p10_distributed_systems,Cached Speculative (Fast),15.18,0.505,1.0,True,,256,16.8603
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p10_distributed_systems,Cached Speculative (Sequential),15.45,0.514,1.0,True,,256,16.5699
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,64,p11_photosynthesis,Target-Only,29.52,1.0,1.0,True,,64,2.1683
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p11_photosynthesis,Cached Speculative (Fast),16.33,0.553,1.0,True,,64,3.9182
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p11_photosynthesis,Cached Speculative (Sequential),15.6,0.528,1.0,True,,64,4.1037
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p11_photosynthesis,Cached Speculative (Fast),14.83,0.502,1.0,True,,64,4.3158
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p11_photosynthesis,Cached Speculative (Sequential),16.07,0.544,1.0,True,,64,3.9824
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p11_photosynthesis,Naive Speculative,12.65,0.428,1.0,True,,64,5.061
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p11_photosynthesis,Cached Speculative (Fast),14.63,0.496,1.0,True,,64,4.3737
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p11_photosynthesis,Cached Speculative (Sequential),14.07,0.477,1.0,True,,64,4.5474
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p11_photosynthesis,Cached Speculative (Fast),15.58,0.528,1.0,True,,64,4.1082
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p11_photosynthesis,Cached Speculative (Sequential),15.53,0.526,1.0,True,,64,4.1212
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,128,p11_photosynthesis,Target-Only,29.14,1.0,1.0,True,,128,4.3922
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p11_photosynthesis,Cached Speculative (Fast),15.67,0.538,1.0,True,,128,8.1666
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p11_photosynthesis,Cached Speculative (Sequential),14.68,0.504,1.0,True,,128,8.717
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p11_photosynthesis,Cached Speculative (Fast),15.7,0.539,1.0,True,,128,8.1508
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p11_photosynthesis,Cached Speculative (Sequential),14.73,0.505,1.0,True,,128,8.691
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p11_photosynthesis,Naive Speculative,10.25,0.352,1.0,True,,128,12.4838
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p11_photosynthesis,Cached Speculative (Fast),13.41,0.46,1.0,True,,128,9.5422
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p11_photosynthesis,Cached Speculative (Sequential),14.79,0.507,1.0,True,,128,8.6568
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p11_photosynthesis,Cached Speculative (Fast),13.96,0.479,1.0,True,,128,9.1678
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p11_photosynthesis,Cached Speculative (Sequential),13.74,0.472,1.0,True,,128,9.3138
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,256,p11_photosynthesis,Target-Only,30.15,1.0,1.0,True,,256,8.4905
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p11_photosynthesis,Cached Speculative (Fast),16.31,0.541,1.0,True,,256,15.7002
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p11_photosynthesis,Cached Speculative (Sequential),16.02,0.531,1.0,True,,256,15.9779
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p11_photosynthesis,Cached Speculative (Fast),16.04,0.532,1.0,True,,256,15.9568
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p11_photosynthesis,Cached Speculative (Sequential),15.06,0.5,1.0,True,,256,16.9941
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p11_photosynthesis,Cached Speculative (Fast),15.97,0.53,1.0,True,,256,16.0315
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p11_photosynthesis,Cached Speculative (Sequential),14.06,0.466,1.0,True,,256,18.2125
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p11_photosynthesis,Cached Speculative (Fast),15.87,0.526,1.0,True,,256,16.1328
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p11_photosynthesis,Cached Speculative (Sequential),15.78,0.523,1.0,True,,256,16.2263
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,64,p12_contract_law,Target-Only,31.35,1.0,1.0,True,,64,2.0415
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p12_contract_law,Cached Speculative (Fast),14.82,0.473,1.0,True,,64,4.3191
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p12_contract_law,Cached Speculative (Sequential),15.61,0.498,1.0,True,,64,4.0989
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p12_contract_law,Cached Speculative (Fast),15.55,0.496,1.0,True,,64,4.1156
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p12_contract_law,Cached Speculative (Sequential),13.49,0.43,1.0,True,,64,4.7439
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p12_contract_law,Naive Speculative,12.16,0.388,0.8929,False,16,64,5.2626
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p12_contract_law,Cached Speculative (Fast),13.86,0.442,1.0,True,,64,4.619
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p12_contract_law,Cached Speculative (Sequential),14.79,0.472,1.0,True,,64,4.3275
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p12_contract_law,Cached Speculative (Fast),15.96,0.509,1.0,True,,64,4.011
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p12_contract_law,Cached Speculative (Sequential),16.26,0.519,1.0,True,,64,3.9356
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,128,p12_contract_law,Target-Only,30.22,1.0,1.0,True,,128,4.2362
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p12_contract_law,Cached Speculative (Fast),14.31,0.474,1.0,True,,128,8.9417
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p12_contract_law,Cached Speculative (Sequential),14.91,0.493,1.0,True,,128,8.5861
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p12_contract_law,Cached Speculative (Fast),15.24,0.504,1.0,True,,128,8.3971
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p12_contract_law,Cached Speculative (Sequential),15.08,0.499,1.0,True,,128,8.4857
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p12_contract_law,Naive Speculative,10.83,0.358,0.9439,False,16,128,11.8237
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p12_contract_law,Cached Speculative (Fast),14.83,0.491,1.0,True,,128,8.6317
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p12_contract_law,Cached Speculative (Sequential),15.82,0.523,1.0,True,,128,8.0933
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p12_contract_law,Cached Speculative (Fast),15.23,0.504,1.0,True,,128,8.4024
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p12_contract_law,Cached Speculative (Sequential),15.72,0.52,1.0,True,,128,8.1399
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,256,p12_contract_law,Target-Only,33.3,1.0,1.0,True,,256,7.6885
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p12_contract_law,Cached Speculative (Fast),15.29,0.459,1.0,True,,256,16.7455
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p12_contract_law,Cached Speculative (Sequential),15.4,0.463,1.0,True,,256,16.6227
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p12_contract_law,Cached Speculative (Fast),13.86,0.416,1.0,True,,256,18.4642
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p12_contract_law,Cached Speculative (Sequential),13.98,0.42,1.0,True,,256,18.3171
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p12_contract_law,Cached Speculative (Fast),15.25,0.458,1.0,True,,256,16.7826
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p12_contract_law,Cached Speculative (Sequential),15.11,0.454,1.0,True,,256,16.945
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p12_contract_law,Cached Speculative (Fast),14.02,0.421,1.0,True,,256,18.2647
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p12_contract_law,Cached Speculative (Sequential),15.69,0.471,1.0,True,,256,16.321
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,64,p13_semiconductor_supply,Target-Only,27.44,1.0,1.0,True,,64,2.3323
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p13_semiconductor_supply,Cached Speculative (Fast),15.55,0.567,1.0,True,,64,4.1149
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p13_semiconductor_supply,Cached Speculative (Sequential),15.67,0.571,1.0,True,,64,4.0839
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p13_semiconductor_supply,Cached Speculative (Fast),14.24,0.519,1.0,True,,64,4.4929
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p13_semiconductor_supply,Cached Speculative (Sequential),14.44,0.526,1.0,True,,64,4.4323
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p13_semiconductor_supply,Naive Speculative,15.6,0.569,1.0,True,,64,4.1015
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p13_semiconductor_supply,Cached Speculative (Fast),16.11,0.587,1.0,True,,64,3.9733
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p13_semiconductor_supply,Cached Speculative (Sequential),16.28,0.593,1.0,True,,64,3.9301
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p13_semiconductor_supply,Cached Speculative (Fast),15.74,0.573,1.0,True,,64,4.0668
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p13_semiconductor_supply,Cached Speculative (Sequential),14.62,0.533,1.0,True,,64,4.3779
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,128,p13_semiconductor_supply,Target-Only,32.56,1.0,1.0,True,,128,3.9307
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p13_semiconductor_supply,Cached Speculative (Fast),15.16,0.466,1.0,True,,128,8.4436
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p13_semiconductor_supply,Cached Speculative (Sequential),15.6,0.479,1.0,True,,128,8.2037
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p13_semiconductor_supply,Cached Speculative (Fast),15.33,0.471,1.0,True,,128,8.3492
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p13_semiconductor_supply,Cached Speculative (Sequential),16.96,0.521,1.0,True,,128,7.5485
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p13_semiconductor_supply,Naive Speculative,11.79,0.362,1.0,True,,128,10.8528
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p13_semiconductor_supply,Cached Speculative (Fast),13.65,0.419,1.0,True,,128,9.3761
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p13_semiconductor_supply,Cached Speculative (Sequential),14.69,0.451,1.0,True,,128,8.7153
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p13_semiconductor_supply,Cached Speculative (Fast),14.7,0.451,1.0,True,,128,8.7087
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p13_semiconductor_supply,Cached Speculative (Sequential),15.7,0.482,1.0,True,,128,8.1506
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,256,p13_semiconductor_supply,Target-Only,31.78,1.0,1.0,True,,256,8.0556
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p13_semiconductor_supply,Cached Speculative (Fast),15.69,0.494,1.0,True,,256,16.3125
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p13_semiconductor_supply,Cached Speculative (Sequential),15.88,0.5,1.0,True,,256,16.1221
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p13_semiconductor_supply,Cached Speculative (Fast),15.0,0.472,1.0,True,,256,17.0621
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p13_semiconductor_supply,Cached Speculative (Sequential),14.73,0.464,1.0,True,,256,17.3747
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p13_semiconductor_supply,Cached Speculative (Fast),15.19,0.478,1.0,True,,256,16.8532
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p13_semiconductor_supply,Cached Speculative (Sequential),14.89,0.469,1.0,True,,256,17.1877
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p13_semiconductor_supply,Cached Speculative (Fast),14.66,0.461,1.0,True,,256,17.4583
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p13_semiconductor_supply,Cached Speculative (Sequential),14.68,0.462,1.0,True,,256,17.4371
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,64,p14_synaptic_plasticity,Target-Only,29.89,1.0,1.0,True,,64,2.1411
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p14_synaptic_plasticity,Cached Speculative (Fast),14.98,0.501,1.0,True,,64,4.2736
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p14_synaptic_plasticity,Cached Speculative (Sequential),14.54,0.487,1.0,True,,64,4.4002
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p14_synaptic_plasticity,Cached Speculative (Fast),14.38,0.481,1.0,True,,64,4.4504
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p14_synaptic_plasticity,Cached Speculative (Sequential),12.49,0.418,1.0,True,,64,5.124
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p14_synaptic_plasticity,Naive Speculative,11.44,0.383,0.9259,False,21,64,5.595
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p14_synaptic_plasticity,Cached Speculative (Fast),12.73,0.426,1.0,True,,64,5.0259
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p14_synaptic_plasticity,Cached Speculative (Sequential),16.68,0.558,1.0,True,,64,3.8359
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p14_synaptic_plasticity,Cached Speculative (Fast),15.43,0.516,1.0,True,,64,4.1481
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p14_synaptic_plasticity,Cached Speculative (Sequential),12.95,0.433,1.0,True,,64,4.9439
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,128,p14_synaptic_plasticity,Target-Only,25.7,1.0,1.0,True,,128,4.9801
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p14_synaptic_plasticity,Cached Speculative (Fast),14.38,0.56,1.0,True,,128,8.8988
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p14_synaptic_plasticity,Cached Speculative (Sequential),16.31,0.635,1.0,True,,128,7.8484
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p14_synaptic_plasticity,Cached Speculative (Fast),14.25,0.554,1.0,True,,128,8.9836
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p14_synaptic_plasticity,Cached Speculative (Sequential),14.81,0.576,1.0,True,,128,8.6448
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p14_synaptic_plasticity,Naive Speculative,10.16,0.395,0.9619,False,21,128,12.5961
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p14_synaptic_plasticity,Cached Speculative (Fast),15.16,0.59,1.0,True,,128,8.441
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p14_synaptic_plasticity,Cached Speculative (Sequential),16.4,0.638,1.0,True,,128,7.8049
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p14_synaptic_plasticity,Cached Speculative (Fast),14.64,0.57,1.0,True,,128,8.7411
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p14_synaptic_plasticity,Cached Speculative (Sequential),14.97,0.583,1.0,True,,128,8.5487
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,256,p14_synaptic_plasticity,Target-Only,30.73,1.0,1.0,True,,256,8.3304
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p14_synaptic_plasticity,Cached Speculative (Fast),15.2,0.495,1.0,True,,256,16.8445
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p14_synaptic_plasticity,Cached Speculative (Sequential),15.48,0.504,1.0,True,,256,16.5413
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p14_synaptic_plasticity,Cached Speculative (Fast),15.35,0.5,1.0,True,,256,16.6753
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p14_synaptic_plasticity,Cached Speculative (Sequential),15.69,0.511,1.0,True,,256,16.3143
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p14_synaptic_plasticity,Cached Speculative (Fast),15.95,0.519,1.0,True,,256,16.0521
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p14_synaptic_plasticity,Cached Speculative (Sequential),14.36,0.467,1.0,True,,256,17.8319
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p14_synaptic_plasticity,Cached Speculative (Fast),13.75,0.447,1.0,True,,256,18.6161
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p14_synaptic_plasticity,Cached Speculative (Sequential),15.37,0.5,1.0,True,,256,16.6602
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,64,p15_calculus_theorem,Target-Only,33.49,1.0,1.0,True,,64,1.911
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p15_calculus_theorem,Cached Speculative (Fast),16.63,0.497,1.0,True,,64,3.8478
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p15_calculus_theorem,Cached Speculative (Sequential),15.48,0.462,1.0,True,,64,4.1331
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p15_calculus_theorem,Cached Speculative (Fast),14.87,0.444,1.0,True,,64,4.3041
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p15_calculus_theorem,Cached Speculative (Sequential),15.2,0.454,1.0,True,,64,4.2113
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p15_calculus_theorem,Naive Speculative,12.34,0.369,1.0,True,,64,5.1845
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p15_calculus_theorem,Cached Speculative (Fast),12.46,0.372,1.0,True,,64,5.1346
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p15_calculus_theorem,Cached Speculative (Sequential),11.41,0.341,1.0,True,,64,5.6082
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p15_calculus_theorem,Cached Speculative (Fast),14.32,0.428,1.0,True,,64,4.4699
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p15_calculus_theorem,Cached Speculative (Sequential),14.19,0.424,1.0,True,,64,4.5094
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,128,p15_calculus_theorem,Target-Only,28.84,1.0,1.0,True,,128,4.4379
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p15_calculus_theorem,Cached Speculative (Fast),14.89,0.516,1.0,True,,128,8.596
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p15_calculus_theorem,Cached Speculative (Sequential),14.68,0.509,1.0,True,,128,8.719
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p15_calculus_theorem,Cached Speculative (Fast),15.09,0.523,1.0,True,,128,8.4811
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p15_calculus_theorem,Cached Speculative (Sequential),15.02,0.521,1.0,True,,128,8.5236
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p15_calculus_theorem,Naive Speculative,10.89,0.378,1.0,True,,128,11.7559
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p15_calculus_theorem,Cached Speculative (Fast),15.8,0.548,1.0,True,,128,8.1031
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p15_calculus_theorem,Cached Speculative (Sequential),15.56,0.539,1.0,True,,128,8.2276
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p15_calculus_theorem,Cached Speculative (Fast),15.88,0.551,1.0,True,,128,8.0609
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p15_calculus_theorem,Cached Speculative (Sequential),15.51,0.538,1.0,True,,128,8.255
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,256,p15_calculus_theorem,Target-Only,32.09,1.0,1.0,True,,256,7.9782
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p15_calculus_theorem,Cached Speculative (Fast),16.04,0.5,1.0,True,,256,15.96
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p15_calculus_theorem,Cached Speculative (Sequential),14.75,0.46,1.0,True,,256,17.3523
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p15_calculus_theorem,Cached Speculative (Fast),15.3,0.477,1.0,True,,256,16.7366
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p15_calculus_theorem,Cached Speculative (Sequential),16.2,0.505,1.0,True,,256,15.8035
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p15_calculus_theorem,Cached Speculative (Fast),12.43,0.387,1.0,True,,256,20.595
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p15_calculus_theorem,Cached Speculative (Sequential),15.06,0.469,1.0,True,,256,16.9938
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p15_calculus_theorem,Cached Speculative (Fast),14.42,0.449,1.0,True,,256,17.7554
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p15_calculus_theorem,Cached Speculative (Sequential),15.83,0.493,1.0,True,,256,16.169
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,64,p16_industrial_revolution,Target-Only,27.92,1.0,1.0,True,,64,2.2924
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p16_industrial_revolution,Cached Speculative (Fast),15.84,0.567,1.0,True,,64,4.0415
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p16_industrial_revolution,Cached Speculative (Sequential),15.44,0.553,1.0,True,,64,4.1447
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p16_industrial_revolution,Cached Speculative (Fast),15.25,0.546,1.0,True,,64,4.1975
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p16_industrial_revolution,Cached Speculative (Sequential),16.15,0.578,1.0,True,,64,3.9632
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p16_industrial_revolution,Naive Speculative,13.52,0.484,1.0,True,,64,4.7334
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p16_industrial_revolution,Cached Speculative (Fast),14.14,0.506,1.0,True,,64,4.5275
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p16_industrial_revolution,Cached Speculative (Sequential),15.14,0.542,1.0,True,,64,4.2276
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p16_industrial_revolution,Cached Speculative (Fast),14.28,0.511,1.0,True,,64,4.4821
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p16_industrial_revolution,Cached Speculative (Sequential),15.11,0.541,1.0,True,,64,4.2345
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,128,p16_industrial_revolution,Target-Only,33.66,1.0,1.0,True,,128,3.8026
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p16_industrial_revolution,Cached Speculative (Fast),15.18,0.451,1.0,True,,128,8.4314
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p16_industrial_revolution,Cached Speculative (Sequential),15.35,0.456,1.0,True,,128,8.3393
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p16_industrial_revolution,Cached Speculative (Fast),15.76,0.468,1.0,True,,128,8.1208
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p16_industrial_revolution,Cached Speculative (Sequential),15.95,0.474,1.0,True,,128,8.0258
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p16_industrial_revolution,Naive Speculative,10.96,0.326,1.0,True,,128,11.6736
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p16_industrial_revolution,Cached Speculative (Fast),16.46,0.489,1.0,True,,128,7.7749
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p16_industrial_revolution,Cached Speculative (Sequential),15.2,0.452,1.0,True,,128,8.4199
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p16_industrial_revolution,Cached Speculative (Fast),15.42,0.458,1.0,True,,128,8.3014
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p16_industrial_revolution,Cached Speculative (Sequential),16.39,0.487,1.0,True,,128,7.81
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,256,p16_industrial_revolution,Target-Only,33.66,1.0,1.0,True,,256,7.6051
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p16_industrial_revolution,Cached Speculative (Fast),15.18,0.451,1.0,True,,256,16.8672
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p16_industrial_revolution,Cached Speculative (Sequential),14.88,0.442,1.0,True,,256,17.2032
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p16_industrial_revolution,Cached Speculative (Fast),15.46,0.459,1.0,True,,256,16.5604
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p16_industrial_revolution,Cached Speculative (Sequential),16.51,0.491,1.0,True,,256,15.5019
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p16_industrial_revolution,Cached Speculative (Fast),15.3,0.455,1.0,True,,256,16.729
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p16_industrial_revolution,Cached Speculative (Sequential),14.81,0.44,1.0,True,,256,17.2843
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p16_industrial_revolution,Cached Speculative (Fast),15.17,0.451,1.0,True,,256,16.8725
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p16_industrial_revolution,Cached Speculative (Sequential),15.37,0.457,1.0,True,,256,16.6562
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,64,p17_epistemology,Target-Only,26.95,1.0,1.0,True,,64,2.3745
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p17_epistemology,Cached Speculative (Fast),15.41,0.572,1.0,True,,64,4.1522
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p17_epistemology,Cached Speculative (Sequential),14.11,0.524,1.0,True,,64,4.535
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p17_epistemology,Cached Speculative (Fast),12.63,0.468,1.0,True,,64,5.069
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p17_epistemology,Cached Speculative (Sequential),12.23,0.454,1.0,True,,64,5.2338
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p17_epistemology,Naive Speculative,13.78,0.511,1.0,True,,64,4.6433
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p17_epistemology,Cached Speculative (Fast),12.79,0.474,1.0,True,,64,5.0043
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p17_epistemology,Cached Speculative (Sequential),14.58,0.541,1.0,True,,64,4.3902
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p17_epistemology,Cached Speculative (Fast),15.49,0.575,1.0,True,,64,4.1308
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p17_epistemology,Cached Speculative (Sequential),13.05,0.484,1.0,True,,64,4.9054
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,128,p17_epistemology,Target-Only,32.81,1.0,1.0,True,,128,3.9007
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p17_epistemology,Cached Speculative (Fast),15.71,0.479,1.0,True,,128,8.1458
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p17_epistemology,Cached Speculative (Sequential),17.04,0.519,1.0,True,,128,7.5113
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p17_epistemology,Cached Speculative (Fast),16.79,0.512,1.0,True,,128,7.6258
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p17_epistemology,Cached Speculative (Sequential),16.25,0.495,1.0,True,,128,7.8785
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p17_epistemology,Naive Speculative,12.48,0.38,1.0,True,,128,10.2561
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p17_epistemology,Cached Speculative (Fast),15.93,0.485,1.0,True,,128,8.0358
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p17_epistemology,Cached Speculative (Sequential),15.53,0.473,1.0,True,,128,8.2403
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p17_epistemology,Cached Speculative (Fast),16.39,0.499,1.0,True,,128,7.8103
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p17_epistemology,Cached Speculative (Sequential),15.1,0.46,1.0,True,,128,8.4763
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,256,p17_epistemology,Target-Only,31.24,1.0,1.0,True,,256,8.1936
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p17_epistemology,Cached Speculative (Fast),14.74,0.472,1.0,True,,256,17.3633
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p17_epistemology,Cached Speculative (Sequential),16.38,0.524,1.0,True,,256,15.6292
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p17_epistemology,Cached Speculative (Fast),14.87,0.476,1.0,True,,256,17.2182
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p17_epistemology,Cached Speculative (Sequential),15.79,0.505,1.0,True,,256,16.2117
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p17_epistemology,Cached Speculative (Fast),16.15,0.517,1.0,True,,256,15.8561
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p17_epistemology,Cached Speculative (Sequential),15.05,0.482,1.0,True,,256,17.0102
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p17_epistemology,Cached Speculative (Fast),16.12,0.516,1.0,True,,256,15.8796
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p17_epistemology,Cached Speculative (Sequential),15.42,0.494,1.0,True,,256,16.6016
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,64,p18_hpc_memory,Target-Only,31.54,1.0,1.0,True,,64,2.029
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p18_hpc_memory,Cached Speculative (Fast),16.38,0.519,1.0,True,,64,3.9074
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p18_hpc_memory,Cached Speculative (Sequential),15.78,0.5,1.0,True,,64,4.0556
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p18_hpc_memory,Cached Speculative (Fast),15.34,0.486,1.0,True,,64,4.1719
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p18_hpc_memory,Cached Speculative (Sequential),14.98,0.475,1.0,True,,64,4.2735
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p18_hpc_memory,Naive Speculative,13.48,0.427,1.0,True,,64,4.7483
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p18_hpc_memory,Cached Speculative (Fast),15.57,0.494,1.0,True,,64,4.1114
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p18_hpc_memory,Cached Speculative (Sequential),15.3,0.485,1.0,True,,64,4.1839
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p18_hpc_memory,Cached Speculative (Fast),15.17,0.481,1.0,True,,64,4.2196
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p18_hpc_memory,Cached Speculative (Sequential),15.77,0.5,1.0,True,,64,4.0579
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,128,p18_hpc_memory,Target-Only,31.48,1.0,1.0,True,,128,4.0657
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p18_hpc_memory,Cached Speculative (Fast),15.85,0.504,1.0,True,,128,8.0734
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p18_hpc_memory,Cached Speculative (Sequential),16.76,0.532,1.0,True,,128,7.6362
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p18_hpc_memory,Cached Speculative (Fast),16.24,0.516,1.0,True,,128,7.8801
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p18_hpc_memory,Cached Speculative (Sequential),14.46,0.459,1.0,True,,128,8.8548
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p18_hpc_memory,Naive Speculative,10.74,0.341,1.0,True,,128,11.9203
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p18_hpc_memory,Cached Speculative (Fast),15.05,0.478,1.0,True,,128,8.5071
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p18_hpc_memory,Cached Speculative (Sequential),15.75,0.5,1.0,True,,128,8.127
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p18_hpc_memory,Cached Speculative (Fast),15.34,0.487,1.0,True,,128,8.345
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p18_hpc_memory,Cached Speculative (Sequential),15.4,0.489,1.0,True,,128,8.3126
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,256,p18_hpc_memory,Target-Only,32.47,1.0,1.0,True,,256,7.8835
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p18_hpc_memory,Cached Speculative (Fast),15.36,0.473,1.0,True,,256,16.6696
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p18_hpc_memory,Cached Speculative (Sequential),15.95,0.491,1.0,True,,256,16.0542
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p18_hpc_memory,Cached Speculative (Fast),14.91,0.459,1.0,True,,256,17.166
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p18_hpc_memory,Cached Speculative (Sequential),15.49,0.477,1.0,True,,256,16.532
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p18_hpc_memory,Cached Speculative (Fast),15.36,0.473,1.0,True,,256,16.6647
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p18_hpc_memory,Cached Speculative (Sequential),15.6,0.48,1.0,True,,256,16.4099
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p18_hpc_memory,Cached Speculative (Fast),15.35,0.473,1.0,True,,256,16.6774
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p18_hpc_memory,Cached Speculative (Sequential),15.54,0.478,1.0,True,,256,16.4788
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,64,p19_marine_coral_ecology,Target-Only,34.52,1.0,1.0,True,,64,1.8539
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p19_marine_coral_ecology,Cached Speculative (Fast),16.77,0.486,1.0,True,,64,3.8165
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p19_marine_coral_ecology,Cached Speculative (Sequential),16.18,0.469,1.0,True,,64,3.9551
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p19_marine_coral_ecology,Cached Speculative (Fast),14.83,0.43,1.0,True,,64,4.3144
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p19_marine_coral_ecology,Cached Speculative (Sequential),15.32,0.444,1.0,True,,64,4.1787
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p19_marine_coral_ecology,Naive Speculative,12.28,0.356,1.0,True,,64,5.2108
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p19_marine_coral_ecology,Cached Speculative (Fast),15.01,0.435,1.0,True,,64,4.2633
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p19_marine_coral_ecology,Cached Speculative (Sequential),14.76,0.427,1.0,True,,64,4.3374
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p19_marine_coral_ecology,Cached Speculative (Fast),15.1,0.437,1.0,True,,64,4.2388
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p19_marine_coral_ecology,Cached Speculative (Sequential),15.36,0.445,1.0,True,,64,4.1674
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,128,p19_marine_coral_ecology,Target-Only,30.36,1.0,1.0,True,,128,4.2162
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p19_marine_coral_ecology,Cached Speculative (Fast),11.99,0.395,1.0,True,,128,10.6781
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p19_marine_coral_ecology,Cached Speculative (Sequential),14.59,0.481,1.0,True,,128,8.7715
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p19_marine_coral_ecology,Cached Speculative (Fast),14.86,0.489,1.0,True,,128,8.6155
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p19_marine_coral_ecology,Cached Speculative (Sequential),15.25,0.502,1.0,True,,128,8.3956
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p19_marine_coral_ecology,Naive Speculative,10.38,0.342,1.0,True,,128,12.328
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p19_marine_coral_ecology,Cached Speculative (Fast),13.41,0.442,1.0,True,,128,9.5478
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p19_marine_coral_ecology,Cached Speculative (Sequential),15.98,0.526,1.0,True,,128,8.0102
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p19_marine_coral_ecology,Cached Speculative (Fast),14.48,0.477,1.0,True,,128,8.8414
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p19_marine_coral_ecology,Cached Speculative (Sequential),15.3,0.504,1.0,True,,128,8.3653
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,256,p19_marine_coral_ecology,Target-Only,27.07,1.0,1.0,True,,256,9.4576
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p19_marine_coral_ecology,Cached Speculative (Fast),15.85,0.585,1.0,True,,256,16.1532
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p19_marine_coral_ecology,Cached Speculative (Sequential),15.6,0.576,1.0,True,,256,16.415
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p19_marine_coral_ecology,Cached Speculative (Fast),15.96,0.589,1.0,True,,256,16.0445
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p19_marine_coral_ecology,Cached Speculative (Sequential),14.44,0.533,1.0,True,,256,17.7285
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p19_marine_coral_ecology,Cached Speculative (Fast),12.55,0.464,1.0,True,,256,20.4024
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p19_marine_coral_ecology,Cached Speculative (Sequential),14.64,0.541,1.0,True,,256,17.4876
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p19_marine_coral_ecology,Cached Speculative (Fast),16.24,0.6,1.0,True,,256,15.7641
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p19_marine_coral_ecology,Cached Speculative (Sequential),16.13,0.596,1.0,True,,256,15.8756
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,64,p20_cryptographic_primitives,Target-Only,28.2,1.0,1.0,True,,64,2.2697
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p20_cryptographic_primitives,Cached Speculative (Fast),14.22,0.504,1.0,True,,64,4.5021
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,64,p20_cryptographic_primitives,Cached Speculative (Sequential),16.01,0.568,1.0,True,,64,3.9972
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p20_cryptographic_primitives,Cached Speculative (Fast),15.65,0.555,1.0,True,,64,4.089
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p20_cryptographic_primitives,Cached Speculative (Sequential),15.09,0.535,1.0,True,,64,4.2426
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,64,p20_cryptographic_primitives,Naive Speculative,13.77,0.488,1.0,True,,64,4.6466
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p20_cryptographic_primitives,Cached Speculative (Fast),15.7,0.557,1.0,True,,64,4.0775
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,64,p20_cryptographic_primitives,Cached Speculative (Sequential),14.76,0.523,1.0,True,,64,4.3373
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p20_cryptographic_primitives,Cached Speculative (Fast),16.7,0.592,1.0,True,,64,3.8334
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,64,p20_cryptographic_primitives,Cached Speculative (Sequential),16.45,0.584,1.0,True,,64,3.8896
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,128,p20_cryptographic_primitives,Target-Only,35.01,1.0,1.0,True,,128,3.6564
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p20_cryptographic_primitives,Cached Speculative (Fast),16.67,0.476,1.0,True,,128,7.6767
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,128,p20_cryptographic_primitives,Cached Speculative (Sequential),14.47,0.413,1.0,True,,128,8.8479
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p20_cryptographic_primitives,Cached Speculative (Fast),12.14,0.347,1.0,True,,128,10.5436
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p20_cryptographic_primitives,Cached Speculative (Sequential),12.45,0.356,1.0,True,,128,10.2799
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,128,p20_cryptographic_primitives,Naive Speculative,7.91,0.226,1.0,True,,128,16.1814
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p20_cryptographic_primitives,Cached Speculative (Fast),13.5,0.386,1.0,True,,128,9.4802
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,128,p20_cryptographic_primitives,Cached Speculative (Sequential),15.12,0.432,1.0,True,,128,8.4645
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p20_cryptographic_primitives,Cached Speculative (Fast),13.1,0.374,1.0,True,,128,9.772
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,128,p20_cryptographic_primitives,Cached Speculative (Sequential),12.79,0.365,1.0,True,,128,10.0083
+"130m/130m: correctness + overhead only, NOT a real speedup result",1,256,p20_cryptographic_primitives,Target-Only,28.35,1.0,1.0,True,,256,9.0298
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p20_cryptographic_primitives,Cached Speculative (Fast),11.85,0.418,1.0,True,,256,21.5986
+"130m/130m: correctness + overhead only, NOT a real speedup result",2,256,p20_cryptographic_primitives,Cached Speculative (Sequential),14.11,0.498,1.0,True,,256,18.141
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p20_cryptographic_primitives,Cached Speculative (Fast),14.51,0.512,1.0,True,,256,17.6421
+"130m/130m: correctness + overhead only, NOT a real speedup result",4,256,p20_cryptographic_primitives,Cached Speculative (Sequential),15.23,0.537,1.0,True,,256,16.8137
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p20_cryptographic_primitives,Cached Speculative (Fast),14.38,0.507,1.0,True,,256,17.8086
+"130m/130m: correctness + overhead only, NOT a real speedup result",6,256,p20_cryptographic_primitives,Cached Speculative (Sequential),16.23,0.572,1.0,True,,256,15.774
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p20_cryptographic_primitives,Cached Speculative (Fast),16.6,0.586,1.0,True,,256,15.418
+"130m/130m: correctness + overhead only, NOT a real speedup result",8,256,p20_cryptographic_primitives,Cached Speculative (Sequential),15.84,0.559,1.0,True,,256,16.1606

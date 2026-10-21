@@ -1,0 +1,30 @@
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Model checkpoints & cache directories
+.cache/
+hf_cache/
+models/
+*.safetensors
+*.bin
+*.pt
+
+# System & IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Results folder: keep directory and csv/plots tracked
+results/*
+!results/.gitkeep
+!results/*.csv
+!results/*.png
