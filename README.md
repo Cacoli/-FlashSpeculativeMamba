@@ -278,20 +278,3 @@ Run speculative decoding interactively side-by-side with the target-only baselin
 ```
 
 ---
-
-## 8. Viva Presentation Prep Notes (Questions & Concise Answers)
-
-### Q1: Why do you evaluate greedy decoding rather than nucleus or temperature sampling?
-> **Answer**: Greedy decoding provides a deterministic, rigorous ground truth for algorithmic equivalence. In speculative sampling, candidate acceptance is probabilistic ($\alpha = \min(1, P_{\text{target}}(x) / P_{\text{draft}}(x))$). Verifying greedy equivalence first proves that the recurrent state rollback, cache synchronization, and multi-token parallel verification logic are mathematically sound before stochastic variance is introduced.
-
-### Q2: Why is state snapshotting and restoration preferred over recomputing the sequence?
-> **Answer**: SSMs are continuous-time recurrent dynamical systems where hidden state $h_t$ is updated sequentially ($O(1)$ per step). If the engine recomputes context from the beginning on every round (the naive approach), total computation grows quadratically $O(L^2)$ with generated sequence length. Snapshotting takes an $O(1)$ tensor clone of the fixed-size hidden states, and restoration uses an in-place GPU `.copy_()`, requiring microseconds regardless of context length.
-
-### Q3: Why does acceptance rate dictate whether speculative decoding achieves a speedup?
-> **Answer**: Speculative decoding delivers wall-clock speedup only when the parameter cost ratio $c = \frac{\text{Cost}(\text{Draft})}{\text{Cost}(\text{Target})} \ll 1$ (e.g. 130M draft vs 1.4B target) and acceptance rate $\alpha \approx 1$. If $c \approx 1$ (as in our 130m/130m validation setup), each speculative round executes $k + 1$ draft forward steps ($k$ draft proposals $+ 1$ draft advance step) plus 1 multi-token verification pass to emit $k + 1$ tokens. Because draft and target have identical compute costs, speculative decoding performs roughly twice the forward-pass compute of target-only generation per token, making speedup $< 1.0\times$ (empirically $\approx 0.50\times$) due to verification overhead. With an asymmetric model pair ($c \ll 1$), drafting $k$ tokens is computationally cheap, and verifying $k$ tokens in a single target pass overcomes memory bandwidth bottlenecks to produce wall-clock speedup.
-
-### Q4: What architectural factors break naive speculative decoding on SSMs?
-> **Answer**: Three factors:
-> 1. **Lack of KV Cache**: SSM hidden states mutate in-place rather than appending to a key-value list; rollback requires explicit state cloning and copying.
-> 2. **Framework Convolution Slicing**: Stock Hugging Face Transformers Mamba code hardcodes single-token convolution buffer slicing during decode mode, throwing an `IndexError` when fed $K > 1$ candidate tokens from an active cache.
-> 3. **Non-Associative Arithmetic**: Parallel 1D convolutions (`F.conv1d`) accumulate float16 numbers in a different order than sequential scalar dot products, creating 1-ULP drift over 24 layers that can flip argmax selections on tied or near-tied logits.
