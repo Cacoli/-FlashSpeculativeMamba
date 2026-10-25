@@ -259,6 +259,17 @@ def parse_args() -> argparse.Namespace:
         help="Run quick sanity benchmark: 5 prompts, k in {2, 4, 8}, lengths {64, 128}.",
     )
     parser.add_argument(
+        "--skip-naive",
+        action="store_true",
+        help="Skip NaiveSpeculativeEngine full-context recompute benchmark.",
+    )
+    parser.add_argument(
+        "--output-csv",
+        type=str,
+        default=None,
+        help="Custom path or filename for output CSV (defaults to benchmark_1p4b.csv if target is 1.4b else benchmark.csv).",
+    )
+    parser.add_argument(
         "--max-prompts",
         type=int,
         default=None,
@@ -306,7 +317,12 @@ def run_benchmark(args: argparse.Namespace) -> None:
     set_seed(args.seed)
     out_dir = Path(args.output_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
-    csv_path = out_dir / "benchmark.csv"
+    if args.output_csv:
+        csv_path = Path(args.output_csv)
+    elif "1.4b" in args.target_model_id.lower() or "1.4b" in args.draft_model_id.lower():
+        csv_path = out_dir / "benchmark_1p4b.csv"
+    else:
+        csv_path = out_dir / "benchmark.csv"
 
     # Reset or initialize CSV
     if csv_path.exists():
@@ -328,6 +344,7 @@ def run_benchmark(args: argparse.Namespace) -> None:
     print(f"Draft Model ID           : {args.draft_model_id}")
     print(f"Target Model ID          : {args.target_model_id}")
     print(f"Mode                     : {'QUICK SANITY RUN' if args.quick else 'FULL PRODUCTION BENCHMARK'}")
+    print(f"Skip Naive Recompute     : {args.skip_naive}")
     print(f"Repeats per test         : {args.repeats}")
     print(f"Output CSV               : {csv_path}")
 
@@ -361,7 +378,7 @@ def run_benchmark(args: argparse.Namespace) -> None:
     print(f"Draft k values           : {k_values}")
     print(f"Base generation lengths  : {lengths}")
     print(f"512 length enabled       : {include_512} (Target-Only & Cached Speculative only)")
-    print(f"NaiveSpeculative Cap     : max length {naive_max_len} (capped to prevent quadratic slowdown)")
+    print(f"NaiveSpeculative Cap     : max length {naive_max_len} (capped to prevent quadratic slowdown; skip_naive={args.skip_naive})")
 
     # Load models
     print("\nLoading models in fp16 precision...")
@@ -369,9 +386,22 @@ def run_benchmark(args: argparse.Namespace) -> None:
     target = TargetModel(model_id=args.target_model_id, use_fast_multitoken=True)
     tokenizer = target.tokenizer
 
+    if torch.cuda.is_available():
+        torch.cuda.synchronize()
+        alloc_mb = torch.cuda.memory_allocated(0) / (1024 ** 2)
+        res_mb = torch.cuda.memory_reserved(0) / (1024 ** 2)
+        peak_mb = torch.cuda.max_memory_allocated(0) / (1024 ** 2)
+        print("=" * 80)
+        print("VRAM MEMORY AFTER LOADING BOTH MODELS:")
+        print(f"  Allocated VRAM         : {alloc_mb:.2f} MB ({alloc_mb / 1024:.2f} GB)")
+        print(f"  Reserved VRAM          : {res_mb:.2f} MB ({res_mb / 1024:.2f} GB)")
+        print(f"  Peak VRAM Allocated    : {peak_mb:.2f} MB ({peak_mb / 1024:.2f} GB)")
+        print(f"  Total Device VRAM      : {backend_info['total_vram_gb']} GB")
+        print("=" * 80)
+
     cached_fast_engine = SpeculativeEngine(draft, target, k=4, use_fast_multitoken=True)
     cached_seq_engine = SpeculativeEngine(draft, target, k=4, use_fast_multitoken=False)
-    naive_engine = NaiveSpeculativeEngine(draft, target, k=4)
+    naive_engine = None if args.skip_naive else NaiveSpeculativeEngine(draft, target, k=4)
 
     # Warmup pass
     print("Warming up CUDA kernels and caching allocator...")
@@ -540,7 +570,7 @@ def run_benchmark(args: argparse.Namespace) -> None:
 
                 # C. Naive Speculative (Recompute Context Reference)
                 # Capped at naive_max_len (128) and only on first 5 prompts for k in {2, 4, 8} to avoid extreme quadratic slowdown
-                run_naive = (max_len <= naive_max_len) and (p_idx <= 5 or k == 4) and (k != 6)
+                run_naive = (not args.skip_naive) and (max_len <= naive_max_len) and (p_idx <= 5 or k == 4) and (k != 6)
                 if run_naive:
                     naive_tps_runs: List[float] = []
                     naive_res: Optional[SpeculativeGenerationResult] = None
@@ -589,11 +619,12 @@ def run_benchmark(args: argparse.Namespace) -> None:
     # Generate Plots
     print("\nGenerating benchmark plots from complete records...")
     df = pd.DataFrame(all_records)
-    generate_plots(df, out_dir, caveat_label)
+    file_suffix = "_1p4b" if "1.4b" in args.target_model_id.lower() else ""
+    generate_plots(df, out_dir, caveat_label, file_suffix=file_suffix)
     print("Benchmark complete! All artifacts saved.")
 
 
-def generate_plots(df: pd.DataFrame, out_dir: Path, caveat_label: str) -> None:
+def generate_plots(df: pd.DataFrame, out_dir: Path, caveat_label: str, file_suffix: str = "") -> None:
     """Generate high-resolution benchmark plots using matplotlib."""
     plt.style.use("seaborn-v0_8-whitegrid" if "seaborn-v0_8-whitegrid" in plt.style.available else "default")
     plt.rcParams["font.sans-serif"] = "DejaVu Sans"
@@ -642,7 +673,7 @@ def generate_plots(df: pd.DataFrame, out_dir: Path, caveat_label: str) -> None:
     ax.grid(True, linestyle=":", alpha=0.6)
     ax.legend(frameon=True, fontsize=9, loc="best")
     plt.tight_layout()
-    p1 = out_dir / "speedup_vs_k.png"
+    p1 = out_dir / f"speedup_vs_k{file_suffix}.png"
     plt.savefig(p1)
     plt.close()
     print(f"Saved plot: {p1}")
@@ -677,7 +708,7 @@ def generate_plots(df: pd.DataFrame, out_dir: Path, caveat_label: str) -> None:
     ax.grid(True, linestyle=":", alpha=0.6)
     ax.legend(frameon=True, fontsize=9, loc="lower left")
     plt.tight_layout()
-    p2 = out_dir / "acceptance_vs_k.png"
+    p2 = out_dir / f"acceptance_vs_k{file_suffix}.png"
     plt.savefig(p2)
     plt.close()
     print(f"Saved plot: {p2}")
@@ -713,7 +744,7 @@ def generate_plots(df: pd.DataFrame, out_dir: Path, caveat_label: str) -> None:
     ax.grid(True, linestyle=":", alpha=0.6)
     ax.legend(frameon=True, fontsize=9, loc="best")
     plt.tight_layout()
-    p3 = out_dir / "speedup_vs_length.png"
+    p3 = out_dir / f"speedup_vs_length{file_suffix}.png"
     plt.savefig(p3)
     plt.close()
     print(f"Saved plot: {p3}")
