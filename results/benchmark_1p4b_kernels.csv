@@ -1,0 +1,71 @@
+model_pair,k,length,prompt_id,mode,tokens_per_sec,speedup,acceptance_rate,exact_match,divergence_index,actual_length,elapsed_time_sec
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,1,64,p01_cs_speculative,Target-Only,9.09,1.0,1.0,True,,64,7.0435
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,2,64,p01_cs_speculative,Cached Speculative (Fast),4.81,0.53,0.6667,True,,64,13.2936
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,2,64,p01_cs_speculative,Cached Speculative (Sequential),4.91,0.54,0.6667,True,,64,13.0321
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,4,64,p01_cs_speculative,Cached Speculative (Fast),5.18,0.57,0.7619,False,10,64,12.3664
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,4,64,p01_cs_speculative,Cached Speculative (Sequential),3.64,0.4,0.4941,False,25,64,17.588
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,8,64,p01_cs_speculative,Cached Speculative (Fast),2.64,0.29,0.3382,False,25,64,24.276
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,8,64,p01_cs_speculative,Cached Speculative (Sequential),4.02,0.442,0.5714,False,14,64,15.9314
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,1,128,p01_cs_speculative,Target-Only,9.09,1.0,1.0,True,,128,14.0815
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,2,128,p01_cs_speculative,Cached Speculative (Fast),5.26,0.578,0.8144,True,,128,24.3507
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,2,128,p01_cs_speculative,Cached Speculative (Sequential),4.9,0.54,0.8144,True,,128,26.098
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,4,128,p01_cs_speculative,Cached Speculative (Fast),5.99,0.659,0.8684,False,10,128,21.379
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,4,128,p01_cs_speculative,Cached Speculative (Sequential),6.03,0.663,0.8684,False,10,128,21.2235
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,8,128,p01_cs_speculative,Cached Speculative (Fast),3.86,0.424,0.5202,False,15,128,33.1931
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,8,128,p01_cs_speculative,Cached Speculative (Sequential),5.23,0.576,0.7971,False,10,128,24.4532
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,1,64,p02_dl_transformers,Target-Only,9.3,1.0,1.0,True,,64,6.8853
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,2,64,p02_dl_transformers,Cached Speculative (Fast),4.92,0.53,0.6667,True,,64,12.9955
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,2,64,p02_dl_transformers,Cached Speculative (Sequential),4.86,0.523,0.6667,True,,64,13.1745
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,4,64,p02_dl_transformers,Cached Speculative (Fast),4.13,0.444,0.5714,False,44,64,15.503
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,4,64,p02_dl_transformers,Cached Speculative (Sequential),4.2,0.452,0.5714,False,44,64,15.2208
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,8,64,p02_dl_transformers,Cached Speculative (Fast),2.82,0.303,0.3643,True,,64,22.6878
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,8,64,p02_dl_transformers,Cached Speculative (Sequential),2.63,0.282,0.3643,True,,64,24.3802
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,1,128,p02_dl_transformers,Target-Only,9.23,1.0,1.0,True,,128,13.8697
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,2,128,p02_dl_transformers,Cached Speculative (Fast),5.37,0.582,0.7379,True,,128,23.8295
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,2,128,p02_dl_transformers,Cached Speculative (Sequential),5.58,0.605,0.7379,True,,128,22.9248
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,4,128,p02_dl_transformers,Cached Speculative (Fast),4.22,0.458,0.5779,False,44,128,30.3066
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,4,128,p02_dl_transformers,Cached Speculative (Sequential),3.49,0.378,0.4505,False,44,128,36.6463
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,8,128,p02_dl_transformers,Cached Speculative (Fast),3.32,0.36,0.4698,True,,128,38.5008
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,8,128,p02_dl_transformers,Cached Speculative (Sequential),3.39,0.368,0.4698,True,,128,37.7403
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,1,64,p03_thermodynamics,Target-Only,8.89,1.0,1.0,True,,64,7.1968
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,2,64,p03_thermodynamics,Cached Speculative (Fast),4.38,0.493,0.6429,True,,64,14.6017
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,2,64,p03_thermodynamics,Cached Speculative (Sequential),4.43,0.498,0.6429,True,,64,14.441
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,4,64,p03_thermodynamics,Cached Speculative (Fast),4.09,0.46,0.55,False,16,64,15.634
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,4,64,p03_thermodynamics,Cached Speculative (Sequential),3.87,0.435,0.5,False,16,64,16.5549
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,8,64,p03_thermodynamics,Cached Speculative (Fast),2.69,0.303,0.3286,False,16,64,23.7805
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,8,64,p03_thermodynamics,Cached Speculative (Sequential),2.96,0.332,0.3588,False,16,64,21.6531
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,1,128,p03_thermodynamics,Target-Only,9.38,1.0,1.0,True,,128,13.6529
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,2,128,p03_thermodynamics,Cached Speculative (Fast),5.47,0.583,0.78,True,,128,23.4101
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,2,128,p03_thermodynamics,Cached Speculative (Sequential),5.48,0.585,0.78,True,,128,23.3392
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,4,128,p03_thermodynamics,Cached Speculative (Fast),4.76,0.508,0.6691,False,16,128,26.8892
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,4,128,p03_thermodynamics,Cached Speculative (Sequential),4.84,0.516,0.6838,False,16,128,26.4665
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,8,128,p03_thermodynamics,Cached Speculative (Fast),3.36,0.359,0.4698,False,16,128,38.0454
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,8,128,p03_thermodynamics,Cached Speculative (Sequential),3.7,0.395,0.5282,False,16,128,34.6047
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,1,64,p04_dna_transcription,Target-Only,9.46,1.0,1.0,True,,64,6.7665
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,2,64,p04_dna_transcription,Cached Speculative (Fast),5.21,0.551,0.7115,False,61,64,12.2863
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,2,64,p04_dna_transcription,Cached Speculative (Sequential),5.29,0.56,0.7115,False,61,64,12.0875
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,4,64,p04_dna_transcription,Cached Speculative (Fast),4.25,0.45,0.5244,True,,64,15.0529
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,4,64,p04_dna_transcription,Cached Speculative (Sequential),4.23,0.447,0.5244,True,,64,15.1469
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,8,64,p04_dna_transcription,Cached Speculative (Fast),3.28,0.347,0.4298,True,,64,19.4926
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,8,64,p04_dna_transcription,Cached Speculative (Sequential),3.15,0.333,0.4298,True,,64,20.3253
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,1,128,p04_dna_transcription,Target-Only,9.66,1.0,1.0,True,,128,13.2479
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,2,128,p04_dna_transcription,Cached Speculative (Fast),5.75,0.595,0.8144,False,61,128,22.2533
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,2,128,p04_dna_transcription,Cached Speculative (Sequential),5.61,0.581,0.8144,False,61,128,22.8008
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,4,128,p04_dna_transcription,Cached Speculative (Fast),4.58,0.474,0.6276,True,,128,27.9252
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,4,128,p04_dna_transcription,Cached Speculative (Sequential),4.71,0.488,0.6276,True,,128,27.1695
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,8,128,p04_dna_transcription,Cached Speculative (Fast),3.62,0.374,0.4928,True,,128,35.3895
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,8,128,p04_dna_transcription,Cached Speculative (Sequential),3.66,0.379,0.4928,True,,128,34.9397
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,1,64,p05_maritime_law,Target-Only,9.73,1.0,1.0,True,,64,6.5774
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,2,64,p05_maritime_law,Cached Speculative (Fast),5.12,0.526,0.6545,True,,64,12.51
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,2,64,p05_maritime_law,Cached Speculative (Sequential),5.01,0.515,0.6545,True,,64,12.7776
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,4,64,p05_maritime_law,Cached Speculative (Fast),3.75,0.385,0.4767,False,41,64,17.0727
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,4,64,p05_maritime_law,Cached Speculative (Sequential),3.94,0.405,0.506,False,41,64,16.2266
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,8,64,p05_maritime_law,Cached Speculative (Fast),2.52,0.259,0.3125,False,17,64,25.365
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,8,64,p05_maritime_law,Cached Speculative (Sequential),2.6,0.267,0.3262,False,17,64,24.6001
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,1,128,p05_maritime_law,Target-Only,9.32,1.0,1.0,True,,128,13.7276
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,2,128,p05_maritime_law,Cached Speculative (Fast),5.39,0.578,0.77,True,,128,23.7682
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,2,128,p05_maritime_law,Cached Speculative (Sequential),5.67,0.608,0.77,True,,128,22.5893
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,4,128,p05_maritime_law,Cached Speculative (Fast),5.05,0.542,0.7121,False,32,128,25.3287
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,4,128,p05_maritime_law,Cached Speculative (Sequential),4.84,0.519,0.6571,False,32,128,26.4591
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,8,128,p05_maritime_law,Cached Speculative (Fast),4.17,0.447,0.5532,False,17,128,30.6911
+mamba-130m-hf/mamba-1.4b-hf real speculative decoding,8,128,p05_maritime_law,Cached Speculative (Sequential),3.67,0.393,0.5075,False,17,128,34.902

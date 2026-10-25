@@ -151,6 +151,20 @@ def apply_mamba_fast_multitoken_patch() -> None:
         return contextualized_states
 
     MambaMixer.slow_forward = patched_slow_forward
+    orig_forward = MambaMixer.forward
+
+    def dispatch_forward(self, hidden_states, cache_params=None, cache_position=None, attention_mask=None):
+        multi_token_cached = (
+            cache_params is not None
+            and cache_position is not None
+            and hidden_states.shape[1] > 1
+            and int(cache_position[0]) > 0
+        )
+        if multi_token_cached:
+            return self.slow_forward(hidden_states, cache_params, cache_position, attention_mask)
+        return orig_forward(self, hidden_states, cache_params, cache_position, attention_mask)
+
+    MambaMixer.forward = dispatch_forward
     _PATCH_APPLIED = True
 
 
